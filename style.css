@@ -1,0 +1,141 @@
+/* ===== Pause and Planet – shared styles ===== */
+:root {
+  --green-900: #1f4d33;
+  --green-700: #2e7d4f;
+  --green-500: #4caf78;
+  --green-100: #e3f1e8;
+  --gray-50: #f6f7f6;
+  --gray-100: #eceeec;
+  --gray-300: #cfd4d1;
+  --gray-700: #4a544e;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  color: var(--gray-700);
+  background: linear-gradient(160deg, var(--white) 0%, var(--gray-100) 45%, var(--green-100) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1; }
+
+/* ---------- Navbar ---------- */
+.pp-navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--green-500);
+  box-shadow: 0 2px 12px rgba(31, 77, 51, 0.08);
+}
+.pp-navbar .navbar-brand {
+  color: var(--green-900);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.pp-navbar .navbar-brand span { color: var(--green-500); }
+.pp-navbar .nav-link {
+  color: var(--gray-700);
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem !important;
+  transition: all 0.2s ease;
+}
+.pp-navbar .nav-link:hover { background: var(--green-100); color: var(--green-700); }
+.pp-navbar .nav-link.active { background: var(--green-700); color: var(--white); }
+
+/* ---------- Hero / page headers ---------- */
+.hero {
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+.hero h1 { font-weight: 800; color: var(--green-900); font-size: clamp(2.2rem, 5vw, 3.6rem); }
+.hero h1 span { color: var(--green-500); }
+.hero p.lead { max-width: 640px; margin: 1rem auto 1.8rem; color: var(--gray-700); }
+.btn-pp {
+  background: var(--green-700);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-pp:hover { background: var(--green-900); color: var(--white); transform: translateY(-2px); }
+
+.page-header {
+  padding: 3rem 0 1.5rem;
+  text-align: center;
+}
+.page-header .badge-icon { font-size: 3.2rem; }
+.page-header h1 { font-weight: 800; color: var(--green-900); }
+.page-header p { max-width: 620px; margin: 0.5rem auto 0; }
+
+/* ---------- Search ---------- */
+.search-box { max-width: 420px; margin: 1.5rem auto 0; }
+.search-box input {
+  border-radius: 999px;
+  border: 1px solid var(--gray-300);
+  padding: 0.6rem 1.2rem;
+}
+.search-box input:focus { border-color: var(--green-500); box-shadow: 0 0 0 0.2rem rgba(76, 175, 120, 0.2); }
+
+/* ---------- Cards ---------- */
+.animal-card, .category-card {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(31, 77, 51, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.animal-card:hover, .category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(31, 77, 51, 0.16);
+}
+.card-top {
+  background: linear-gradient(135deg, var(--green-100), var(--gray-100));
+  text-align: center;
+  font-size: 4rem;
+  padding: 1.5rem 0 1rem;
+}
+.animal-card .card-title { color: var(--green-900); font-weight: 700; }
+.tag {
+  display: inline-block;
+  background: var(--green-100);
+  color: var(--green-700);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+.animal-card .meta { font-size: 0.85rem; color: var(--gray-700); }
+.fact-box {
+  background: var(--gray-50);
+  border-left: 4px solid var(--green-500);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.category-card { text-decoration: none; color: inherit; display: block; text-align: center; padding: 1.6rem 1rem; }
+.category-card .emoji { font-size: 3rem; }
+.category-card h5 { color: var(--green-900); font-weight: 700; margin-top: 0.6rem; }
+.category-card p { font-size: 0.88rem; margin: 0; }
+
+.fade-in { animation: fadeUp 0.5s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Footer ---------- */
+.pp-footer {
+  background: var(--green-900);
+  color: #d6e8dc;
+  text-align: center;
+  padding: 1.4rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
