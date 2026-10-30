@@ -69,8 +69,8 @@ const CATEGORIES = {
     title: "Mammals",
     intro: "Warm-blooded animals that have hair or fur and feed their young with milk.",
     animals: [
-      { name: "Lion", emoji: "🦁", tag: "Big Cat", habitat: "African savanna", diet: "Carnivore", fact: "Lions are the only cats that live in social groups called prides." },
-      { name: "Chimpanzee", emoji: "🐒", tag: "Primate", habitat: "African forests", diet: "Omnivore", fact: "Chimpanzees share about 98% of their DNA with humans." },
+      { name: "Lion", emoji: "<img src='lion.jpg' width='70px' height='100px'>  ", tag: "Big Cat", habitat: "African savanna", diet: "Carnivore", fact: "Lions are the only cats that live in social groups called prides." },
+      { name: "chimpanzee", emoji: "<img src='chimpanzee.jpg' width='70px' height='100px'>  ", tag: "Primate", habitat: "African forests", diet: "Omnivore", fact: "Chimpanzees share about 98% of their DNA with humans." },
       { name: "Bat", emoji: "🦇", tag: "Flying Mammal", habitat: "Caves, forests", diet: "Insects, fruit", fact: "Bats are the only mammals capable of true flight." },
       { name: "Polar Bear", emoji: "🐻‍❄️", tag: "Bear", habitat: "Arctic", diet: "Seals", fact: "A polar bear's skin is actually black." },
       { name: "Kangaroo", emoji: "🦘", tag: "Marsupial", habitat: "Australia", diet: "Herbivore", fact: "Kangaroos cannot walk backwards." },
